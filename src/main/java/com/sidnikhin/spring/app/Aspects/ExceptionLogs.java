@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class ExceptionLogs {
-    @Before("com.sidnikhin.spring.app.Aspects.MyPointCuts.allGetMethods())")
+    @Before("com.sidnikhin.spring.app.Aspects.MyPointCuts.allGetMethods()")
     public void exceptionLog(){
         System.out.println("log: exception log");
     }

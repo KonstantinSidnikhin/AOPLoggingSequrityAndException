@@ -4,7 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component ("libraryBean")
 public class Library {
-    public void getBook(){
+
+    public void getBook(Book book, String person_name){
         System.out.println("a reader is taking a book from Library");
     }
     public void returnBook(){
@@ -17,4 +18,6 @@ public class Library {
         System.out.println("a reader is returning a book to Library");
     }
 
+    public void getBook(Book book) {
+    }
 }
